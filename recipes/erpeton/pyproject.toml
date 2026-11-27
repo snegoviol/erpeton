@@ -1,0 +1,31 @@
+# ==================================================================================================
+# recipes/erpeton/pyproject.toml
+# ==================================================================================================
+
+[project]
+name = "erpeton"
+version = "0.1.0"
+description = "A production-oriented Python chess engine module based on Stockfish 11, focused on providing low-latency move validation and classical search-based best move selection."
+
+license = "GPL-3.0-or-later"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/snegoviol/erpeton"
+Documentation = "https://github.com/snegoviol/erpeton#readme"
+Repository = "https://github.com/snegoviol/erpeton/tree/main/recipes/erpeton"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+erpeton = [
+    "py.typed",
+    "*.pyi",
+]
+
+# ==================================================================================================

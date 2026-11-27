@@ -1,0 +1,23 @@
+# ==================================================================================================
+# pixi.toml
+# ==================================================================================================
+
+[workspace]
+authors = ["Ilya Snegov <unweariedheart@gmail.com>"]
+name = "erpeton"
+version = "0.1.0"
+license = "GPL-3.0-or-later"
+repository = "https://github.com/snegoviol/erpeton"
+
+channels = ["https://prefix.dev/conda-forge"]
+platforms = ["linux-64"]
+preview = ["pixi-build"]
+requires-pixi = ">=0.84.2"
+
+# ==================================================================================================
+
+[dependencies]
+python = ">=3.15.2,<3.16"
+erpeton = { path = "recipes/erpeton" }
+
+# ==================================================================================================
